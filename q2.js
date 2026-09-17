@@ -1,0 +1,12 @@
+const a = 47;
+const b = 9;
+sum = a + b;
+diff = a - b;
+multiply = a * b;
+divide = a / b;
+reminder = a % b;
+console.log(sum);
+console.log(diff);
+console.log(multiply);
+console.log(divide);
+console.log(reminder);
