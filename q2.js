@@ -1,10 +1,10 @@
 const a = 47;
 const b = 9;
-sum = a + b;
-diff = a - b;
-multiply = a * b;
-divide = a / b;
-reminder = a % b;
+const sum = a + b;
+const diff = a - b;
+const multiply = a * b;
+const divide = a / b;
+const reminder = a % b;
 console.log(sum);
 console.log(diff);
 console.log(multiply);
