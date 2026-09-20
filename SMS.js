@@ -32,7 +32,10 @@ const students = [
 ];
 const topStudents = students.filter(student => student.marks >= 80);
 const topStudentsName = topStudents.map(student => student.name);
-const CSE = topStudents.filter(student => student.course = "CSE");
+const CSE = topStudents.filter(student => student.course === "CSE");
+const totalMarks = topStudents.reduce(
+    (total, student) => total + student.marks,0);
+const averageMarks = totalMarks / topStudents.length;
 const firstTopCSE = CSE.find(student => student.marks >= 80);
 const needStudent = students.find(student => student.name === "A");
 const updatedStudent = {
@@ -44,13 +47,18 @@ function getFirstSkill(skills) {
     const [first,...rest] = skills;
     console.log(first);
 }
-
-
-
-
+const collegeData = {
+    location: {
+        city: "Chennai"
+    }
+};
+console.log(collegeData?.location?.city??"Unknown");
+const cseNames = topStudents.filter(student => student.course === "CSE" && student.marks >= 80);
 
 console.log(topStudents);
 console.log(topStudentsName);
 console.log(firstTopCSE);
 console.log(updatedStudent);
-getFirstSkill(["Java","Python"]);
+console.log(totalMarks);
+getFirstSkill();
+console.log(cseNames);
